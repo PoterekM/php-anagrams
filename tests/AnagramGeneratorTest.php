@@ -7,11 +7,11 @@
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
             $inputOne = "a";
-            $inputTwo = "a";
+            $inputTwo = "b";
             //Act
             $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
             //Assert
-            $this->assertEquals(true, $result);
+            $this->assertEquals(false, $result);
         }
 
 
