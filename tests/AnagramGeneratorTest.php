@@ -2,7 +2,7 @@
     require_once "src/AnagramGenerator.php";
     class AnagramGeneratorTest extends PHPUnit_Framework_TestCase
     {
-        function test_singleAnagram()
+        function test_isAnagram_singleLetter()
         {
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
