@@ -10,12 +10,20 @@
 <?php
     class AnagramGenerator
     {
+        function wordLength($word)
+        {
+            return strlen($word);
+        }
+
         function testAnagram($word)
         {
             if (!(ctype_alpha($word))) {
                 return "Please enter a word.";
             } else {
-                return strtolower($word);
+                $lowercase_word = strtolower($word);
+                $word_length = strlen($word);
+                $result_array = [$lowercase_word, $word_length];
+                return $result_array;
             }
         }
     }

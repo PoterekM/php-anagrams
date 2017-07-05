@@ -13,7 +13,29 @@
             $this->assertEquals("Please enter a word.", $result);
         }
 
-        function test_testAnagram_lowercase()
+        // function test_testAnagram_lowercase()
+        // {
+        //     //Arrange
+        //     $test_AnagramGenerator = new AnagramGenerator;
+        //     $input = "BrEaD";
+        //     //Act
+        //     $result = $test_AnagramGenerator->testAnagram($input);
+        //     //Assert
+        //     $this->assertEquals("bread", $result);
+        // }
+
+        // function test_testAnagram_stringLength()
+        // {
+        //     //Arrange
+        //     $test_AnagramGenerator = new AnagramGenerator;
+        //     $input = "BrEaD";
+        //     //Act
+        //     $result = $test_AnagramGenerator->testAnagram($input);
+        //     //Assert
+        //     $this->assertEquals(5, $result);
+        // }
+
+        function test_testAnagram_lowercaseAndStringLength()
         {
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
@@ -21,19 +43,9 @@
             //Act
             $result = $test_AnagramGenerator->testAnagram($input);
             //Assert
-            $this->assertEquals("bread", $result);
+            $this->assertEquals(["bread", 5], $result);
         }
 
-        function test_testAnagram_stringLength()
-        {
-            //Arrange
-            $test_AnagramGenerator = new AnagramGenerator;
-            $input = "BrEaD";
-            //Act
-            $result = $test_AnagramGenerator->testAnagram($input);
-            //Assert
-            $this->assertEquals(5, $result);
-        }
 
     }
 ?>
