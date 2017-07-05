@@ -1,11 +1,3 @@
-<!-- reject non-alpha -->
-<!-- lowercase uppercase letters -->
-<!-- recognize length -->
-<!-- compare length -->
-<!-- compare letters (no repeats)-->
-<!-- compare letters (with repeats) -->
-<!-- recognize single-letter anagram -->
-<!-- recognize multi-letter anagram -->
 
 <?php
     class AnagramGenerator
@@ -18,9 +10,11 @@
             sort($inputTwo);
             if ($inputOne == $inputTwo)
                 return true;
-                var_dump($inputOne);
         }
-        function arrayIsAnagram($inputTwo)
+    }
+?>
+<!--
+        // function arrayIsAnagram($inputTwo)
 
 
         // function isAlpha($val)
@@ -45,5 +39,4 @@
         //         return $result_array;
         //     }
         // }
-    }
-?>
+ -->
