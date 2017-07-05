@@ -13,6 +13,14 @@
             //Assert
             $this->assertEquals(false, $result);
         }
+        function test_isAnagram_multipleLetter()
+        {
+            $test_AnagramGenerator = new AnagramGenerator;
+            $inputOne = "aa";
+            $inputTwo = "bb";
+            $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
+            $this->assertEquals(false, $result);
+        }
 
 
 
