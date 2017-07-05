@@ -2,41 +2,10 @@
 <?php
     class AnagramGenerator
     {
-        function isAnagram($inputOne, $inputTwo)
+        function isAnagram($input_word)
         {
-            $inputOne = str_split($inputOne);
-            $inputTwo = str_split($inputTwo);
-            sort($inputOne);
-            sort($inputTwo);
-            if ($inputOne == $inputTwo)
-                return true;
+            $string_split = str_split($input_word);
+            return $string_split;
         }
     }
 ?>
-<!--
-        // function arrayIsAnagram($inputTwo)
-
-
-        // function isAlpha($val)
-        // {
-        //     if (!(ctype_alpha($val))) {
-        //         return "Please enter a word.";
-        // }
-        //
-        // function testAnagram($word, $test_case)
-        // {
-        //     if (!(isAlpha($word))) && (!(isAlpha($test_case))) {
-        //         return "Please enter a word.";
-        //
-        // function testAnagram($word, $test_case)
-        // {
-        //     if (!(ctype_alpha($word))) {
-        //         return "Please enter a word.";
-        //     } else {
-        //         $lowercase_word = strtolower($word);
-        //         $word_length = strlen($word);
-        //         $result_array = [$lowercase_word, $word_length];
-        //         return $result_array;
-        //     }
-        // }
- -->
