@@ -10,11 +10,6 @@
 <?php
     class AnagramGenerator
     {
-        function wordLength($word)
-        {
-            return strlen($word);
-        }
-
         function testAnagram($word)
         {
             if (!(ctype_alpha($word))) {
