@@ -25,7 +25,7 @@
         {
             $test_AnagramGenerator = new AnagramGenerator;
             $inputOne = "aba";
-            $inputTwo = "abb";
+            $inputTwo = "bba";
             $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
             $this->assertEquals(false, $result);
         }
