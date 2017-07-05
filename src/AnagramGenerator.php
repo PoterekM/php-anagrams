@@ -12,6 +12,10 @@
     {
         function isAnagram($inputOne, $inputTwo)
         {
+            $inputOne = str_split($inputOne);
+            $inputTwo = str_split($inputTwo);
+            sort($inputOne);
+            sort($inputTwo);
             if ($inputOne == $inputTwo)
                 return true;
         }

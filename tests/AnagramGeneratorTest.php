@@ -13,11 +13,19 @@
             //Assert
             $this->assertEquals(false, $result);
         }
-        function test_isAnagram_multipleLetter()
+        function test_isAnagram_sameMultipleLetter()
         {
             $test_AnagramGenerator = new AnagramGenerator;
             $inputOne = "aa";
-            $inputTwo = "bb";
+            $inputTwo = "aa";
+            $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
+            $this->assertEquals(true, $result);
+        }
+        function test_isAnagram_multiLetterSort()
+        {
+            $test_AnagramGenerator = new AnagramGenerator;
+            $inputOne = "aba";
+            $inputTwo = "abb";
             $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
             $this->assertEquals(false, $result);
         }
