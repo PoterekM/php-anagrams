@@ -10,7 +10,7 @@
 <?php
     class AnagramGenerator
     {
-        function rejectNonAlpha($word)
+        function testAnagram($word)
         {
             if (!(ctype_alpha($word))) {
                 return "Please enter a word.";
