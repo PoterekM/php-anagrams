@@ -10,16 +10,36 @@
 <?php
     class AnagramGenerator
     {
-        function testAnagram($word)
+        function isAnagram($inputOne, $inputTwo)
         {
-            if (!(ctype_alpha($word))) {
-                return "Please enter a word.";
-            } else {
-                $lowercase_word = strtolower($word);
-                $word_length = strlen($word);
-                $result_array = [$lowercase_word, $word_length];
-                return $result_array;
+            if (($inputOne) != ($inputTwo)) {
+                return "This is not an anagram!";
             }
         }
+
+
+
+        // function isAlpha($val)
+        // {
+        //     if (!(ctype_alpha($val))) {
+        //         return "Please enter a word.";
+        // }
+        //
+        // function testAnagram($word, $test_case)
+        // {
+        //     if (!(isAlpha($word))) && (!(isAlpha($test_case))) {
+        //         return "Please enter a word.";
+        //
+        // function testAnagram($word, $test_case)
+        // {
+        //     if (!(ctype_alpha($word))) {
+        //         return "Please enter a word.";
+        //     } else {
+        //         $lowercase_word = strtolower($word);
+        //         $word_length = strlen($word);
+        //         $result_array = [$lowercase_word, $word_length];
+        //         return $result_array;
+        //     }
+        // }
     }
 ?>
