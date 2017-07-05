@@ -17,11 +17,23 @@
         {
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
-            $input = "Bread";
+            $input = "BrEaD";
             //Act
             $result = $test_AnagramGenerator->testAnagram($input);
             //Assert
             $this->assertEquals("bread", $result);
         }
+
+        function test_testAnagram_stringLength()
+        {
+            //Arrange
+            $test_AnagramGenerator = new AnagramGenerator;
+            $input = "BrEaD";
+            //Act
+            $result = $test_AnagramGenerator->testAnagram($input);
+            //Assert
+            $this->assertEquals(5, $result);
+        }
+
     }
 ?>
