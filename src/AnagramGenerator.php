@@ -17,7 +17,7 @@
             sort($inputOne);
             sort($inputTwo);
             if ($inputOne == $inputTwo)
-                return false;
+                return true;
         }
 
 

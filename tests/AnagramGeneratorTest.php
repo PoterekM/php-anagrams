@@ -24,11 +24,12 @@
         function test_isAnagram_multiLetterSort()
         {
             $test_AnagramGenerator = new AnagramGenerator;
-            $inputOne = "aba";
-            $inputTwo = "bba";
+            $inputOne = "bread";
+            $inputTwo = "beard";
             $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
-            $this->assertEquals(false, $result);
+            $this->assertEquals(true, $result);
         }
+        // function
 
 
 
