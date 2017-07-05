@@ -12,9 +12,8 @@
     {
         function isAnagram($inputOne, $inputTwo)
         {
-            if (($inputOne) != ($inputTwo)) {
-                return "This is not an anagram!";
-            }
+            if ($inputOne == $inputTwo)
+                return true;
         }
 
 

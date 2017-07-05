@@ -7,12 +7,13 @@
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
             $inputOne = "a";
-            $inputTwo = "b";
+            $inputTwo = "a";
             //Act
             $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
             //Assert
             $this->assertEquals(true, $result);
         }
+
 
 
 
