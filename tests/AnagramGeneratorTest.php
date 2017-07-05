@@ -6,7 +6,7 @@
         {
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
-            $input_word = "kkkkgk";
+            $input_word = "kumbaya";
             //Act
             $result = $test_AnagramGenerator->isAnagram($input_word);
             //Assert
