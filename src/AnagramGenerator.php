@@ -14,6 +14,8 @@
         {
             if (!(ctype_alpha($word))) {
                 return "Please enter a word.";
+            } else {
+                return strtolower($word);
             }
         }
     }
