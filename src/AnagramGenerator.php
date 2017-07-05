@@ -12,7 +12,9 @@
     {
         function rejectNonAlpha($word)
         {
-
+            if (!(ctype_alpha($word))) {
+                return "Please enter a word.";
+            }
         }
     }
 ?>
