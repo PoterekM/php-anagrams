@@ -18,8 +18,9 @@
             sort($inputTwo);
             if ($inputOne == $inputTwo)
                 return true;
+                var_dump($inputOne);
         }
-
+        function arrayIsAnagram($inputTwo)
 
 
         // function isAlpha($val)

@@ -29,6 +29,7 @@
             $result = $test_AnagramGenerator->isAnagram($inputOne, $inputTwo);
             $this->assertEquals(true, $result);
         }
+
         // function
 
 
